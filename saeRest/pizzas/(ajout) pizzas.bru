@@ -1,0 +1,29 @@
+meta {
+  name: (ajout) pizzas
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:8080/api/pizzas/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: admin/admin
+}
+
+body:json {
+  {
+    "name": "test",
+    "pate": {
+      "id": 1
+    },
+    "ingredients": [
+      {
+        "id": 1
+      }
+    ]
+  }
+}

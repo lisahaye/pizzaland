@@ -1,0 +1,15 @@
+meta {
+  name: pizzas-id
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/pizzas/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: admin/admin
+}

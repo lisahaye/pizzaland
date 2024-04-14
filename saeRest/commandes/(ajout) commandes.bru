@@ -1,0 +1,29 @@
+meta {
+  name: (ajout) commandes
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/api/commandes/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Samy",
+    "date": "2024-03-10",
+    "panier": [
+      {
+        "id": 1
+      },
+      {
+        "id": 2
+      },
+      {
+        "id": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+meta {
+  name: (modif) pizzas-id 2
+  type: http
+  seq: 11
+}
+
+patch {
+  url: http://localhost:8080/api/pizzas/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "Quatre fromages",
+    "pate": {
+      "id": 2,
+      "name": "Fine"
+    },
+    "price": 11.99,
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Mozzarella",
+        "price": 2.5
+      },
+      {
+        "id": 2,
+        "name": "Gorgonzola",
+        "price": 3
+      },
+      {
+        "id": 3,
+        "name": "Emmental",
+        "price": 2
+      },
+      {
+        "id": 4,
+        "name": "Parmesan",
+        "price": 3
+      }
+    ]
+  }
+  
+}

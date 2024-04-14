@@ -1,0 +1,15 @@
+meta {
+  name: (delete) commandes-id
+  type: http
+  seq: 10
+}
+
+delete {
+  url: http://localhost:8080/api/commandes/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: admin/admin
+}

@@ -1,0 +1,17 @@
+meta {
+  name: edit pates
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:8080/api/pates/6
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Nouveau"
+  }
+}

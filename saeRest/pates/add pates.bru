@@ -1,0 +1,17 @@
+meta {
+  name: add pates
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/pates
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Classique"
+  }
+}

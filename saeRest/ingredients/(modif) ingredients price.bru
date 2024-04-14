@@ -1,0 +1,17 @@
+meta {
+  name: (modif) ingredients price
+  type: http
+  seq: 8
+}
+
+patch {
+  url: http://localhost:8080/api/ingredients/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "price": "sds"
+  }
+}

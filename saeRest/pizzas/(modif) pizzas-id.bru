@@ -1,0 +1,28 @@
+meta {
+  name: (modif) pizzas-id
+  type: http
+  seq: 10
+}
+
+patch {
+  url: http://localhost:8080/api/pizzas/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "Huits fromages",
+    "pate": {
+      "id": 2
+    },
+    "price": 5.00,
+    "ingredients": [
+      {
+        "id": 1
+      }
+    ]
+  }
+  
+}

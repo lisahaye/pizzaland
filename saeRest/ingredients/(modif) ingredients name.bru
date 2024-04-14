@@ -1,0 +1,17 @@
+meta {
+  name: (modif) ingredients name
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:8080/api/ingredients/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Chocolats"
+  }
+}

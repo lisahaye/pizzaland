@@ -1,0 +1,15 @@
+meta {
+  name: pates
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/api/pates
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: admin/admin
+}
